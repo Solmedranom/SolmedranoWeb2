@@ -51,6 +51,69 @@ a {
   width: 400px;
 }
 
+.info {
+  margin: 2rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 15px;
+}
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 70px;
+}
+
+.profe {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.ubicacion {
+  display: flex;
+}
+
+.ubi {
+  text-align: right;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.desc {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cont {
+  background-color: #d9d6ad;
+}
+
+.cont {
+  display: grid;
+  align-items: center;
+  padding: 10px;
+  grid-template-columns: 20% 30%;
+  gap: -10px;
+  margin-right: -10px;
+}
+
+.iconos {
+  row-gap: 5px;
+}
+
+.email {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
 footer {
   text-align: center;
   color: #aaaba8;
