@@ -3,3 +3,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "_vars";
 @import "_mixins";
+
+*{
+    box-sizing: border-box;
+    font-family: $textoFont;
+    margin: 0px;
+padding: 0px;
+}
+
+.logo {
+    width: $imgLogo;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.logo :hover{
+    transform: scale(1.2);
+}
+
+header {
+    display: flex;
+    background-color: $colorG;
+    justify-content: space-between;
+    align-items: end;
+}
+
+li{
+    flex-direction: row;
+}
+
+.nav-links {
+    list-style-type: $textDeco;
+}
+.nav-links li {
+    display: inline-block;
+
+    padding: 20px;
+}
+
+.nav-links a:hover {
+font-weight: $textBold;
+color: $colorK;
+}
+
+a {
+    color: $colorK;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.imgCV{
+    width: $imgSm;
+}
+
+
+footer {
+    text-align: center;
+    color: $colorG;
+    font-style: italic;
+}
+

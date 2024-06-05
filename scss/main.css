@@ -1,1 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logo :hover {
+  transform: scale(1.2);
+}
+
+header {
+  display: flex;
+  background-color: #aaaba8;
+  justify-content: space-between;
+  align-items: end;
+}
+
+li {
+  flex-direction: row;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-links a:hover {
+  font-weight: 600;
+  color: #0b0b0b;
+}
+
+a {
+  color: #0b0b0b;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.imgCV {
+  width: 400px;
+}
+
+footer {
+  text-align: center;
+  color: #aaaba8;
+  font-style: italic;
+}/*# sourceMappingURL=main.css.map */
