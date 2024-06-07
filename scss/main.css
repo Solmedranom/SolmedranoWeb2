@@ -89,13 +89,9 @@ h2 {
 }
 
 .cont {
-  background-color: #d9d6ad;
-}
-
-.cont {
   display: grid;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   grid-template-columns: 20% 30%;
   gap: -10px;
   margin-right: -10px;

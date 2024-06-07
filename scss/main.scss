@@ -1,128 +1,126 @@
 // imports
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "_vars";
 @import "_mixins";
 
-*{
-    box-sizing: border-box;
-    font-family: $textoFont;
-    margin: 0px;
-padding: 0px;
+* {
+  font-family: $textoFont;
+  margin: 0px;
+  padding: 0px;
 }
 
 .logo {
-    width: $imgLogo;
-    cursor: pointer;
-    transition: all 0.3s;
+  width: $imgLogo;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.logo :hover{
-    transform: scale(1.2);
+
+.logo :hover {
+  transform: scale(1.2);
 }
 
 header {
-    display: flex;
-    background-color: $colorG;
-    justify-content: space-between;
-    align-items: end;
+  display: flex;
+  background-color: $colorG;
+  justify-content: space-between;
+  align-items: end;
 }
 
-li{
-    flex-direction: row;
+li {
+  flex-direction: row;
 }
 
 .nav-links {
-    list-style-type: $textDeco;
+  list-style-type: $textDeco;
 }
 .nav-links li {
-    display: inline-block;
-    padding: 20px;
+  display: inline-block;
+  padding: 20px;
 }
 
 .nav-links a:hover {
-font-weight: $textBold;
-color: $colorK;
+  font-weight: $textBold;
+  color: $colorK;
 }
 
 a {
-    color: $colorK;
-    text-decoration: none;
-    font-style: normal;
+  color: $colorK;
+  text-decoration: none;
+  font-style: normal;
 }
 
-.imgCV{
-    width: $imgSm;
+.imgCV {
+  width: $imgSm;
 }
-
 
 //INFO
-.info{
-    margin: 2rem;
-    gap: 1rem;
-    display: grid;
-grid-template-columns: 40% 40%;
-gap: 15px;
+.info {
+  margin: 2rem;
+  gap: 1rem;
+
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 15px;
 }
 
-h2{
-    font-family: $especialFont;
-    font-size: $tituloEspe;
-
+h2 {
+  font-family: $especialFont;
+  font-size: $tituloEspe;
 }
 
-.profe{
-    margin-bottom: 5px;
-    font-size: $texto1;
-    font-weight: $textLight;
+.profe {
+  margin-bottom: 5px;
+  font-size: $texto1;
+  font-weight: $textLight;
 }
 
-.ubicacion{
-    display:flex
+.ubicacion {
+  display: flex;
 }
 
-.ubi{
-    text-align: right;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-style: italic;
-font-size: $texto2;
+.ubi {
+  text-align: right;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-style: italic;
+  font-size: $texto2;
 }
 
-.desc{
-    padding: 20px;
-    font-size: $titulo3;
-    font-weight: $textRegular;
-}
-.cont{
-    background-color: $colorA;
+.desc {
+  padding: $espacio20;
+  font-size: $titulo3;
+  font-weight: $textRegular;
 }
 
 .cont {
-    display: grid;
-    align-items: center;
-    padding: 10px;
-    grid-template-columns: 20% 30%;
-    gap: -10px;
-    margin-right: -10px;
+  display: grid;
+  align-items: center;
+  padding: $espacio20;
+  grid-template-columns: 20% 30%;
+  gap: -10px;
+  margin-right: -10px;
 }
 
 .iconos {
-    row-gap: 5px;
+  gap: 10px;
 }
 
-.email{
-    display: flex;
-    padding: 20px;
-    gap: 10px;
-    text-align: left;
-    vertical-align: middle;
-    line-height: 25px;
+.email {
+  display: flex;
+  padding: $espacio20;
+  gap: $espacio10;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 25px;
 }
 
-//FOOTER 
+span {
+  background-color: $colorS;
+}
+//FOOTER
 footer {
-    text-align: center;
-    color: $colorG;
-    font-style: italic;
+  text-align: $textoCenter;
+  color: $colorG;
+  font-style: $textItali;
 }
-
