@@ -2,71 +2,22 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "_vars";
+@import "_comon";
 @import "_mixins";
 
-* {
-  font-family: $textoFont;
-  margin: 0px;
-  padding: 0px;
-}
-
-.logo {
-  width: $imgLogo;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.logo :hover {
-  transform: scale(1.2);
-}
-
-header {
-  display: flex;
-  background-color: $colorG;
-  justify-content: space-between;
-  align-items: end;
-}
-
-li {
-  flex-direction: row;
-}
-
-.nav-links {
-  list-style-type: $textDeco;
-}
-.nav-links li {
-  display: inline-block;
-  padding: 20px;
-}
-
-.nav-links a:hover {
-  font-weight: $textBold;
-  color: $colorK;
-}
-
-a {
-  color: $colorK;
-  text-decoration: none;
-  font-style: normal;
-}
-
 .imgCV {
-  width: $imgSm;
+  width: $imgMd;
 }
 
 //INFO
 .info {
-  margin: 2rem;
-  gap: 1rem;
-
+  @include boxing(2rem, 450px);
+  gap: 2rem;
   display: grid;
   grid-template-columns: 40% 40%;
-  gap: 15px;
 }
 
-h2 {
-  font-family: $especialFont;
-  font-size: $tituloEspe;
+.nombre {
 }
 
 .profe {
@@ -82,8 +33,8 @@ h2 {
 .ubi {
   text-align: right;
   vertical-align: middle;
-  margin-left: 10px;
-  font-style: italic;
+  margin-left: $espacio10;
+  font-style: $textItali;
   font-size: $texto2;
 }
 
@@ -91,11 +42,12 @@ h2 {
   padding: $espacio20;
   font-size: $titulo3;
   font-weight: $textRegular;
+  text-align: $textoCenter;
 }
 
 .cont {
   display: grid;
-  align-items: center;
+  align-items: $textoCenter;
   padding: $espacio20;
   grid-template-columns: 20% 30%;
   gap: -10px;
@@ -103,24 +55,55 @@ h2 {
 }
 
 .iconos {
-  gap: 10px;
+  gap: $espacio10;
 }
 
 .email {
   display: flex;
   padding: $espacio20;
   gap: $espacio10;
-  text-align: left;
+  text-align: $textoLef;
   vertical-align: middle;
   line-height: 25px;
 }
 
-span {
-  background-color: $colorS;
+// Section proyecto
+
+#proyecto {
+  background-color: $colorB;
+  @include boxing(2rem, 860px);
+  margin: 1rem;
 }
-//FOOTER
-footer {
+
+.titu {
   text-align: $textoCenter;
-  color: $colorG;
-  font-style: $textItali;
+  font-size: $titulo1;
+  margin-bottom: $espacio10;
+}
+
+.cont2 {
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 30px;
+  padding: 10px;
+  font-size: $texto2;
+}
+
+.proy1 {
+  @include proy(1rem, 350px, $colorS);
+  display: flex;
+  flex-direction: column;
+}
+
+.imgProy {
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+//sectiontecno
+#tecno {
+  @include boxing(2rem, 550px);
+  background-color: $colorA;
+  margin: 1rem;
 }

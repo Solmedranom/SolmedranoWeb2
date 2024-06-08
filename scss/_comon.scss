@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+    font-family: $textoFont;
+}
+.logo {
+  width: $imgLogo;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logo :hover {
+  transform: scale(1.2);
+}
+
+header {
+  display: flex;
+  background-color: $colorG;
+  justify-content: space-between;
+  align-items: end;
+}
+
+li {
+  flex-direction: row;
+}
+
+.nav-links {
+  list-style-type: $textDeco;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-links a:hover {
+  font-weight: $textBold;
+  color: $colorK;
+}
+
+a {
+  color: $colorK;
+  text-decoration: none;
+  font-style: normal;
+}
+
+h2 {
+  font-family: $especialFont;
+  font-size: $tituloEspe;
+}
+h4{
+    font-family: $especialFont;
+    font-size: $titulo3;
+    text-align: center;
+}
+
+.cop {
+  border: none;
+}
+
+.icono{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: $colorR;
+    gap: $espacio10;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    width: 100px;
+}
+
+.btn-tex{
+    text-align: $textoRig;
+    vertical-align: middle;
+    font-size: $texto2;
+}
+//FOOTER
+footer {
+  text-align: $textoCenter;
+  color: $colorG;
+  font-style: $textItali;
+}
+
+.copy {
+  padding: $espacio20;
+}

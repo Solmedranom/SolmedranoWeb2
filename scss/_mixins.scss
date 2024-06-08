@@ -1,2 +1,21 @@
-@mixin text ($size, $line, $color, $padding) {
+@mixin texto ($size, $line, $color, $padding) {
+    font-family: $textoFont;
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    padding: $padding;
+    margin: 5px;
+}
+
+@mixin boxing ($padding, $tam) {
+    padding: $padding;
+    height: $tam;
+}
+
+@mixin proy ($padding, $tam, $color) {
+    padding: $padding;
+    height: $tam;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: $color;
 }
