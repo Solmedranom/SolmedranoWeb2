@@ -19,3 +19,17 @@
     border-radius: 25px;
     border-color: $color;
 }
+
+@mixin tag ($tam, $color){
+        display: flex;
+        border: $tam solid;
+        border-radius: 10px;
+        border-color: $color;
+        gap: $espacio10;
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 15px;
+}

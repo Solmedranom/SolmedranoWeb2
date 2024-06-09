@@ -15,9 +15,7 @@
   gap: 2rem;
   display: grid;
   grid-template-columns: 40% 40%;
-}
 
-.nombre {
 }
 
 .profe {
@@ -70,9 +68,10 @@
 // Section proyecto
 
 #proyecto {
-  background-color: $colorB;
+  background-color: $colorBF;
   @include boxing(2rem, 860px);
   margin: 1rem;
+
 }
 
 .titu {
@@ -94,12 +93,36 @@
   @include proy(1rem, 350px, $colorS);
   display: flex;
   flex-direction: column;
+  background-color: $colorF;
+  box-shadow: 5px 5px 8px $colorG; 
 }
 
 .imgProy {
   margin-bottom: 15px;
   height: 100px;
+  border-radius: 15px;
 }
+
+.desc-proy{
+  font-size: $texto2;
+  margin: $espacio10;
+}
+
+.tags {
+display: grid;
+grid-template-columns: 33% 33% 33%;
+grid-template-rows: repeat();
+row-gap: 0px;
+}
+
+.tag1{
+  @include tag(1px, $colorO);
+}
+
+.tag2{
+  @include tag(0.5px, $colorBO);
+}
+
 
 //sectiontecno
 #tecno {
