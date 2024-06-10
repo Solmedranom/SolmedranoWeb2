@@ -11,11 +11,10 @@
 
 //INFO
 .info {
-  @include boxing(2rem, 450px);
+  @include boxing(3rem, 420px);
   gap: 2rem;
   display: grid;
   grid-template-columns: 40% 40%;
-
 }
 
 .profe {
@@ -71,7 +70,6 @@
   background-color: $colorBF;
   @include boxing(2rem, 860px);
   margin: 1rem;
-
 }
 
 .titu {
@@ -89,12 +87,21 @@
   font-size: $texto2;
 }
 
+
 .proy1 {
   @include proy(1rem, 350px, $colorS);
   display: flex;
   flex-direction: column;
   background-color: $colorF;
-  box-shadow: 5px 5px 8px $colorG; 
+  box-shadow: 5px 5px 8px $colorG;
+}
+
+.proy2{
+  @include proy(1rem, 250px, $colorS);
+  display: flex;
+  flex-direction: column;
+  background-color: $colorF;
+  box-shadow: 5px 5px 8px $colorG;
 }
 
 .imgProy {
@@ -103,23 +110,43 @@
   border-radius: 15px;
 }
 
-.desc-proy{
+.imgProy2 {
+  margin-bottom: 15px;
+  height: 90px;
+  width: 90PX;
+  border-radius: 15px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 30% 50%;
+    grid-template-rows: repeat();
+}
+
+.imgProy-2 {
+  margin-bottom: 15px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.desc-proy {
   font-size: $texto2;
   margin: $espacio10;
 }
 
 .tags {
-display: grid;
-grid-template-columns: 33% 33% 33%;
-grid-template-rows: repeat();
-row-gap: 0px;
+  display: grid;
+  grid-template-columns: 70% 70%;
+  grid-template-rows: repeat();
+  row-gap: 0px;
 }
 
-.tag1{
+
+.tag1 {
   @include tag(1px, $colorO);
 }
 
-.tag2{
+.tag2 {
   @include tag(0.5px, $colorBO);
 }
 
