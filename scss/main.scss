@@ -141,13 +141,19 @@
   row-gap: 0px;
 }
 
+.tags2 {
+  display: grid;
+  grid-template-columns: 34% 34% 34%;
+  grid-template-rows: repeat();
+  row-gap: 0px;
+}
 
 .tag1 {
-  @include tag(1px, $colorO);
+  @include tag(1px, $colorO, 100px, 15px);
 }
 
 .tag2 {
-  @include tag(0.5px, $colorBO);
+  @include tag(0.5px, $colorBO, 80px, 15px);
 }
 
 
