@@ -5,6 +5,7 @@
 
 p{
     font-family: $textoFont;
+    color: $colorK;
 }
 .logo {
   width: $imgLogo;
@@ -51,12 +52,20 @@ h2 {
   font-family: $especialFont;
   font-size: $tituloEspe;
 }
+
 h4{
+  text-align: center;
     font-family: $especialFont;
     font-size: $titulo3;
-    text-align: center;
+    padding: 3px;
 }
 
+h3{
+  font-family: $textoFont;
+  font-size: $titulo1;
+  font-weight: 500;
+  margin-bottom: $espacio20;
+}
 .cop {
   background-color: none;
   border: 0.5px solid;
@@ -65,8 +74,9 @@ h4{
 
 .icono{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 30% 30%;
     align-items: center;
+    gap: 10px;
 }
 
 .btn{
@@ -78,7 +88,7 @@ h4{
     margin: 5px;
     padding: 5px;
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: 30px;
 }
 
@@ -88,6 +98,9 @@ h4{
     font-size: $texto2;
 }
 
+.btn:hover{
+  background-color: $colorS;
+}
 
 //FOOTER
 footer {
